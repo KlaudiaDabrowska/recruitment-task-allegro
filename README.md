@@ -40,10 +40,10 @@ Open [http://localhost:3000]
 1. Validation includes characters such as "." and ".." as the application is run on localhost, these characters can make that:
 
 
-   ⋅⋅⋅user stay on the same view even though entered the user name
+   -user stay on the same view even though entered the user name
    
    
-   ⋅⋅⋅user move to the parent directory of the current directory, or the directory one level up from the current directory.
+   -user move to the parent directory of the current directory, or the directory one level up from the current directory.
 
 2. If user is not found or user has no repository - appropriate errors will be displayed
 
