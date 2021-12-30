@@ -2,11 +2,11 @@ export const theme = {
   colors: {
     textPrimary: '#111111',
     textSecondary: '#FFF',
-    // textSecondary: '#d5c6e0',
     backgroundPrimary: '#FBF9FC',
     backgroundSecondary: '#f8f4fa',
-    backgroundTertiary: '#a58eaf',
-    // textHover: '#FFFFFF',
+    colorTertiary: '#a58eaf',
+    colorStar: '#b3a9a9',
+    error: '#d10707d4',
   },
   fontSize: {
     xxl: '2.8rem',
