@@ -19,7 +19,7 @@ export const theme = {
     xxxs: '.5rem',
   },
   spacing: {
-    xxxl: '10rem',
+    xxxl: '7rem',
     xxl: '5rem',
     xl: '4rem',
     l: '3rem',

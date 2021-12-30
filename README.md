@@ -20,7 +20,7 @@ To clone and run this application, you'll need **Git and Node.js** installed on 
 $ git clone https://github.com/KlaudiaDabrowska/recruitment-task-allegro
 
 # Go into the repository
-$ cd allegro-app
+$ cd recruitment-task-allegro
 
 # Install dependencies
 $ npm install
@@ -37,12 +37,11 @@ Open [http://localhost:3000]
 ---
 
 ## Comments
+
 1. Validation includes characters such as "." and ".." as the application is run on localhost, these characters can make that:
 
-
    -user stay on the same view even though entered the user name
-   
-   
+
    -user move to the parent directory of the current directory, or the directory one level up from the current directory.
 
 2. If user is not found or user has no repository - appropriate errors will be displayed
