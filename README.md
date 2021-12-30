@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Recrutiment task - Allegro Spring TECH e-Xperience 2022
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A web application that displays lists the repositories of any GitHub user.
+It consists of two main components:
 
-In the project directory, you can run:
+1. A form that allows you to enter a GitHub username (e.g. Allegro)
+2. List of repositories of the searched user sorted by popularity (number of
+   stars)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To clone and run this application, you'll need **Git and Node.js** installed on your computer. From your command line:
 
-### `npm test`
+```sh
+# Clone this repository
+$ git clone https://github.com/KlaudiaDabrowska/recruitment-task-allegro
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Go into the repository
+$ cd allegro-app
 
-### `npm run build`
+# Install dependencies
+$ npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Run the app
+$ npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Open app in the browser
 
-### `npm run eject`
+Open [http://localhost:3000]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Comments
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+⋅⋅\* Validation includes characters such as "." and ".." as the application is run on localhost, these characters can make that:
+⋅⋅⋅user stay on the same view even though entered the user name
+⋅⋅⋅user move to the parent directory of the current directory, or the directory one level up from the current directory.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+⋅⋅\* If user is not found or user has no repository - appropriate errors will be displayed
 
-## Learn More
+⋅⋅\* When sending a link to a friend (e.g [localhost:3000/repositories/allegro]), the name of the searched user will be displayed in the input (e.g allegro), so that the friend knows whose repo it is.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+TODO: Add pagination. The default max items per page are 100. When someone has more repos, they do not appear on the application

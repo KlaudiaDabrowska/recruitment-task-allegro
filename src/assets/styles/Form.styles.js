@@ -1,37 +1,48 @@
 import styled from 'styled-components';
-import { Form, Field } from 'formik';
 
-export const StyledForm = styled(Form)`
+export const StyledForm = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 25px;
-  background-color: ${({ theme }) => theme.colors.backgroundSecondary};
   width: 100%;
-  max-width: 520px;
-  padding: 40px 50px;
+  max-width: 600px;
+  margin-bottom: ${({ theme }) => theme.spacing.xxxl};
+  padding: 40px 40px 0px;
+  background-color: ${({ theme }) => theme.colors.backgroundSecondary};
   border-radius: 25px;
-  box-shadow: 10px 20px 55px -10px ${({ theme }) => theme.colors.backgroundTertiary};
+  box-shadow: 10px 20px 55px -10px ${({ theme }) => theme.colors.colorTertiary};
+  @media (max-width: 540px) {
+    width: 80%;
+  }
+  @media (max-width: 411px) {
+    margin-bottom: ${({ theme }) => theme.spacing.xxl};
+  }
 `;
 
 export const Label = styled.label`
-  font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: ${({ theme }) => theme.spacing.m};
+  font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: 500;
+  text-align: center;
+  @media (max-width: 540px) {
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
+  @media (max-width: 411px) {
+    font-size: ${({ theme }) => theme.fontSize.s};
+  }
 `;
 
-export const StyledField = styled(Field)`
-  padding: 10px 8px;
+export const StyledInput = styled.input`
   width: 100%;
+  margin-bottom: ${({ theme }) => theme.spacing.xs};
+  padding: 10px 8px;
   border: 1px solid ${({ theme }) => theme.colors.backgroundSecondary};
-  box-sizing: border-box;
   box-shadow: -2px 4px 10px rgba(115, 124, 142, 0.09);
   border-radius: 25px;
-  margin-bottom: 10px;
 
   &:focus {
     outline: none;
-    box-shadow: 10px 20px 55px -10px ${({ theme }) => theme.colors.backgroundTertiary};
+    box-shadow: 7px 6px 20px ${({ theme }) => theme.colors.colorTertiary};
   }
 `;

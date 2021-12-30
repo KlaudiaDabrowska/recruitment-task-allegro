@@ -2,9 +2,8 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'assets/styles/theme';
 import { GlobalStyle } from 'assets/styles/GlobalStyle';
 import { Wrapper } from 'assets/styles/App.styles';
-import { UserNameForm } from 'pages/mainView/Form';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { List } from 'pages/listView/List';
+import { RepositoriesTab } from 'pages/repositories/RepositoriesTab';
 
 const App = () => {
   return (
@@ -13,8 +12,8 @@ const App = () => {
         <GlobalStyle />
         <Wrapper>
           <Routes>
-            <Route path="/repositories" element={<List />} />
-            <Route path="/" element={<UserNameForm />} />
+            <Route path="/repositories/:paramUsername" element={<RepositoriesTab />} />
+            <Route path="/" element={<RepositoriesTab />} />
           </Routes>
         </Wrapper>
       </ThemeProvider>
