@@ -37,15 +37,14 @@ Open [http://localhost:3000]
 ---
 
 ## Comments
+1. Validation includes characters such as "." and ".." as the application is run on localhost, these characters can make that:
+   -user stay on the same view even though entered the user name
+   -user move to the parent directory of the current directory, or the directory one level up from the current directory.
 
-⋅⋅\*Validation includes characters such as "." and ".." as the application is run on localhost, these characters can make that:
-⋅⋅⋅user stay on the same view even though entered the user name
-⋅⋅⋅user move to the parent directory of the current directory, or the directory one level up from the current directory.
+2. If user is not found or user has no repository - appropriate errors will be displayed
 
-⋅⋅\* If user is not found or user has no repository - appropriate errors will be displayed
-
-⋅⋅\* When sending a link to a friend (e.g [localhost:3000/repositories/allegro]), the name of the searched user will be displayed in the input (e.g allegro), so that the friend knows whose repo it is.
+3. When sending a link to a friend (e.g [localhost:3000/repositories/allegro]), the name of the searched user will be displayed in the input (e.g allegro), so that the friend knows whose repo it is.
 
 ---
 
-TODO: Add pagination. The default max items per page are 100. When someone has more repos, they do not appear on the application
+**TODO**: Add pagination. The default max items per page are 100. When someone has more repos, they do not appear on the application
