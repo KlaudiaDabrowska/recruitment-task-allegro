@@ -1,6 +1,6 @@
-# Recrutiment task - Allegro Spring TECH e-Xperience 2022
+# Repository search engine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Recrutiment task - Allegro Spring TECH e-Xperience 2022
 
 A web application that displays lists the repositories of any GitHub user.
 It consists of two main components:
@@ -17,10 +17,10 @@ To clone and run this application, you'll need **Git and Node.js** installed on 
 
 ```sh
 # Clone this repository
-$ git clone https://github.com/KlaudiaDabrowska/recruitment-task-allegro
+$ git clone https://github.com/KlaudiaDabrowska/repository-search-engine
 
 # Go into the repository
-$ cd recruitment-task-allegro
+$ cd repository-search-engine
 
 # Install dependencies
 $ npm install
